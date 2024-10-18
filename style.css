@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    position: relative; 
+   
+}
+h1 {
+    z-index: 3; 
+    color: #fff; 
+    position: relative;
+}
+.triangle-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#18054b;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+   
+    z-index: 1; 
+    
+}
+.triangle-gray {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e5e7eb; 
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+    z-index: 0; 
+}
+.card {
+    transition: transform 0.6s;
+    position: relative; 
+    overflow: visible; 
+    z-index: 2; 
+}
+/* .card:hover {
+    transform: rotate(360deg);
+} */
+.card img {
+    position: absolute; 
+    top: -40px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 50%; 
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+.card .fa-mobile-screen-button , .fa-droplet, .fa-faucet , .fa-calendar{
+    background-color: white;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgb(176 156 175 / 30%);
+    border: 4px solid #18054b;
+}
+.fa-mobile-screen-button {
+    font-weight: 900;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: xxx-large;
+    color:#a895da;
+    
+}
+.fa-droplet{
+    font-weight: 900;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: xxx-large;
+    color:#a895da;
+}
+.fa-faucet{
+    font-weight: 900;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: xxx-large;
+    color:#a895da;  
+}
+.fa-calendar{
+    font-weight: 900;
+    padding-left: 17px;
+    padding-top: 15px;
+    font-size: xxx-large;
+    color:#a895da;  
+}
